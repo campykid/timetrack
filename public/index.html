@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>timetrack</title>
+	<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
+	<script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<style>
+		.body {
+			padding: 20px;
+		}
+		form {
+			padding: 20px;
+		}
+		.demo-card-wide {
+			display: inline-block;
+			margin: 20px;
+		}
+	</style>
+</head>
+<body>
+
+
+<!-- 
+	<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+		<div class="mdl-card__title">
+			<h2 class="mdl-card__title-text">07.01.2016</h2>
+		</div>
+		<div class="mdl-card__supporting-text">
+			Это было знойным летом
+		</div>
+		<div class="mdl-card__actions mdl-card--border">
+			<p class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+				3 часа
+			</p>
+		</div>
+		<div class="mdl-card__menu">
+			<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+				<i class="material-icons">remove_circle</i>
+			</button>
+		</div>
+	</div> -->
+
+
+<main class="mdl-layout__content mdl-color--grey-100">
+
+	<form method="POST" action="/">
+		<div class="mdl-textfield mdl-js-textfield">
+			<input class="mdl-textfield__input" type="text" id="sample2" name="date">
+			<label class="mdl-textfield__label" for="sample2">Date</label>
+		</div>
+		<br>
+		<div class="mdl-textfield mdl-js-textfield">
+			<input class="mdl-textfield__input" type="text" id="sample1" name="hours">
+			<label class="mdl-textfield__label" for="sample1">Time</label>
+		</div>
+		<br>
+		<div class="mdl-textfield mdl-js-textfield">
+			<textarea class="mdl-textfield__input" type="text" rows= "3" id="sample5" name="description" ></textarea>
+			<label class="mdl-textfield__label" for="sample5">Description</label>
+		</div>
+		<br>
+		<button type="submit" value="Add" class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
+			<i class="material-icons">add</i>
+		</button>
+	</form>
+</main>
+
+	<footer class="mdl-mini-footer">
+		<div class="mdl-mini-footer__left-section">
+			<div class="mdl-logo">Title</div>
+			<ul class="mdl-mini-footer__link-list">
+				<li><a href="#">Timetrack 2016</a></li>
+			</ul>
+		</div>
+</footer>
+</body>
+</html>
